@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>urbanspoon</title>
+</head>
+<body style="background: linear-gradient(-45deg,#c4b106,#da631e,#c91e12);">
+<style>
+        .container{
+            background-image: url("C:/Users/dell/Desktop/EP labs/project/images/signup.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            width: 100%;
+            height: 900px;
+        }
+    </style>
+
+
+    <div class="container">
+        <!--Header task bar-->
+
+        <div style="background-color:rgb(59, 55, 55); padding-top:5px; padding-left:15px; color:wheat">
+            <div> 
+                <ul>
+                   <li style=" display: inline-block; font-size:30px ; padding-bottom: 10px;"><nav>URBAN SPOON</nav></li>
+                   <li style=" display: inline-block; float: right; font-size:20px ;padding-bottom: 10px; "><nav><a href="../home/home.html " style="padding: 15px;color:wheat">back</a></nav> </li>
+                </ul>
+            </div>
+        </div>
+
+
+    <!--Forms-->
+    <form name= "regform" action= "./Signups" onsubmit="return validateform()" method="post">
+        <div align = center style="padding-top:100px; ">
+        <div style="color:wheat;border:black solid 1.5px; padding-top:10px; padding-left:25px;padding-right:25px;width:180px;">
+            <div style="font-size: 25px;">
+                <label><h2 >Signup</h2></label>
+             </div>
+        <div style="padding-bottom: 15px; font-size: 20px;">
+        <label for="uname">User Name</label>
+        <input type="text" id="uname" name="uname" autofocus required>
+        </div>
+        <div style="padding-bottom: 15px;font-size: 20px;">
+            <label for="fname">Full Name</label>
+            <input type="text" id="fname" name="fname" required>
+        </div>
+       
+        <div style="padding-bottom: 20px;font-size: 20px;">
+            <label for="mail">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+         <div style="padding-bottom: 15px;font-size: 20px;">
+            <label for="pass">Password</label>
+            <input type="password" id="pass" name="pass" required  min="6">
+        </div>
+        <div style="padding-bottom: 15px;font-size: 20px;">
+            <label for="cpass">confirm password</label>
+            <input type="password" id="cpass"name="cpass" required>
+        </div>
+        <div style="padding-bottom: 55px;font-size: 25px;">
+            <input type="submit" name="btn" value="submit" style="padding:7px 12px 7px 12px" >
+        </div>
+    </div>
+    </div>
+        
+    </form>
+    </div>
+
+</body>
+</html>
